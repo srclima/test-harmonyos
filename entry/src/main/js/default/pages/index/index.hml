@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="wearable_upperPart">
+        <text class="wearable_title">AudioPlayer</text>
+        <text class="wearable_version">Podcast</text>
+    </div>
+    <div class="wearable_lowerPart">
+        <list class="list_container">
+            <list-item class="list_item">
+                <image src="/common/images/dot.svg" class="dot"></image>
+                <text class="topic_name" on:click="tapTopic">
+                    Actualidad y política
+                </text>
+            </list-item>
+            <list-item class="list_item">
+                <image src="/common/images/dot.svg" class="dot"></image>
+                <text class="topic_name" on:click="tapTopic">
+                    Cultura y sociedad
+                </text>
+            </list-item>
+            <list-item class="list_item">
+                <image src="/common/images/dot.svg" class="dot"></image>
+                <text class="topic_name" on:click="tapTopic">
+                    Deportes
+                </text>
+            </list-item>
+            <list-item class="list_item">
+                <image src="/common/images/dot.svg" class="dot"></image>
+                <text class="topic_name" on:click="tapTopic">
+                    Educación y ciencia
+                </text>
+            </list-item>
+            <list-item class="list_item">
+                <image src="/common/images/dot.svg" class="dot"></image>
+                <text class="topic_name" on:click="tapTopic">
+                    Ocio y entretenimiento
+                </text>
+            </list-item>
+            <list-item class="list_item">
+                <image src="/common/images/dot.svg" class="dot"></image>
+                <text class="topic_name" on:click="tapTopic">
+                    Salud y estilo de vida
+                </text>
+            </list-item>
+            <list-item class="list_item">
+                <image src="/common/images/dot.svg" class="dot"></image>
+                <text class="topic_name" on:click="tapTopic">
+                    Tecnología y negocios
+                </text>
+            </list-item>
+        </list>
+    </div>
+</div>

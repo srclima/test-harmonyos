@@ -1,0 +1,76 @@
+{
+  "app": {
+    "bundleName": "com.shuntar.ondemandapplication",
+    "vendor": "shuntar",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+    "default" : {
+      "network" : {
+        "cleartextTraffic" : true
+      }
+    }
+  },
+  "module": {
+    "package": "com.shuntar.ondemandapplication",
+    "name": ".MyApplication",
+    "mainAbility": "com.shuntar.ondemandapplication.MainAbility",
+    "deviceType": [
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.shuntar.ondemandapplication.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": "com.shuntar.ondemandapplication.ServiceAbilityForJS",
+        "icon": "$media:icon",
+        "description": "$string:serviceabilityforjs_description",
+        "type": "service"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/tematic/tematic"
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 454,
+          "autoDesignWidth": true
+        }
+      }
+    ],
+    "reqPermissions": [
+      {"name": "ohos.permission.GET_NETWORK_INFO"},
+      {"name" :  "ohos.permission.INTERNET"},
+      {"name": "ohos.permission.GET_WIFI_INFO"}
+    ],
+    "allowClassMap": true
+  }
+}
